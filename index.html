@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twitch Crew</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="icon" href="img/tclogo.png">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">Twitch Crew</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="https://home.twitchcrew.com/merch">Merch</a>
+          <a class="nav-item nav-link" href="https://home.twitchcrew.com/contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-xl-4 offset-xl-4 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-xs-12 offset-xs-0">
+        <img src="img/tcesports.png" alt="Twitch Crew Community" class="logo img-fluid">
+      </div>
+    </div>
+
+    <div class="social-links">
+      <a href="https://www.twitch.tv/twitchcrewcommunity" target="_blank">
+        <img src="img/twitch.png" alt="Twitch">
+      </a>
+      <a href="https://discordapp.com/invite/cyTdEMr" target="_blank">
+        <img src="img/discord.png" alt="Discord">
+      </a>
+      <a href="https://www.youtube.com/channel/UC19ux9oGaHJE2hpVJyZSKfw" target="_blank">
+        <img src="img/youtube.png" alt="YouTube">
+      </a>
+      <a href="https://twitter.com/TheTwitchCrew" target="_blank">
+        <img src="img/twitter.png" alt="Twitter">
+      </a>
+      <a href="https://www.instagram.com/twitchcrew/" target="_blank">
+        <img src="img/instagram.png" alt="Instagram">
+      </a>
+    </div>
+
+    <div class="row">
+      <div class="col-sm">
+        <div id="twitch-embed"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm mission-statement">
+        Twitch Crew is a discord community with a mission to help streamers achieve their goals by providing a place to meet people with similar goals. As small streamers ourselves we knew the struggle of getting your channel recognized and how hard it is to be putting yourself out there without anyone watching. After many discouraging streams with low viewer counts, we knew there had to be a better way. What initially began as a way for small streamers to find and support each other quickly grew into a family. You can always find us playing games together, hosting discord-wide tourneys, or arguing about whether pineapple goes on pizza. Throughout everything we do together, the biggest priority of the Twitch Crew Fam has always been to spread positivity. Everyone is welcome into the Crew despite their channel size, skill level, or stream content. Even if you’re not a streamer and just want to find some new channels to watch on Twitch.. Twitch Crew has something for everyone.
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm footer">
+        Copyright &copy; 2018 Twitch Crew Community
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+  <script type="text/javascript">
+    new Twitch.Embed("twitch-embed", {
+      channel: "twitchcrewcommunity",
+      width: "100%",
+      height: "100%",
+      theme: "dark",
+      layout: "video",
+    });
+  </script>
+</body>
+</html>
